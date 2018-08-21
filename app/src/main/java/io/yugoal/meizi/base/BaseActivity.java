@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
-import com.umeng.analytics.MobclickAgent;
-
 import io.yugoal.meizi.R;
 
 /**
@@ -56,7 +54,6 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MobclickAgent.enableEncrypt(true);
     }
 
 
@@ -79,13 +76,11 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        MobclickAgent.onResume(this);
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        MobclickAgent.onPause(this);
         super.onPause();
     }
 }

@@ -5,10 +5,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'huangjz'
-            keyPassword 'huangjz318'
-            storeFile file('/Users/yugoal/StudioProjects/jks/myKeystor.keystore')
-            storePassword 'huangjz318'
+            keyAlias 'meizi'
+            keyPassword 'caoyu1127'
+            storeFile file('/Users/yugoal/StudioProjects/jks/meizi')
+            storePassword 'caoyu1127'
         }
     }
 
